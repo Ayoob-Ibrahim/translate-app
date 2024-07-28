@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "extract": "@ngx-translate-extract --input ./src --output ./src/assests/language/en.json --sort --clean --format namespaced-json",
+    "//npm i  @biesbjerg/ngx-translate-extract": "//for developer purpose",
+    "// after using the above cli u can use extract cli" : "npm run extract"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +21,9 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "@biesbjerg/ngx-translate-extract": "^7.0.4",
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
